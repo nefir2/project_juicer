@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+using idk_kateassy.AbstractClasses;
 using idk_kateassy.Classes.Fruits;
 using idk_kateassy.Interfaces;
 
@@ -20,9 +22,7 @@ namespace idk_kateassy.Classes
 			for (int i = 0; i < array.Length; i++)
 			{
 				Console.WriteLine(array[i]);
-				//if (!(i == array.Length - 1)) Console.Write(", ");
-				//else Console.WriteLine();
-                if (array[i].IsCitrus()) citrusCount++;
+                if (array[i] is Citrus) citrusCount++;
 				if (array[i] is Apple) appleCount++;
 			}
 			Console.WriteLine(

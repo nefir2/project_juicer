@@ -11,9 +11,11 @@ namespace idk_kateassy.Classes.Fruits
 {
 	internal class Lemon : Citrus, IFruit
 	{
-		private string color;
-		private string name;
-		private bool isCitrus;
+		private readonly string color;
+		private readonly string name;
+		private readonly bool isCitrus;
+		public string Color => color;
+		public string Name => name;
 		public Lemon()
 		{
 			name = nameof(Lemon);
@@ -24,6 +26,6 @@ namespace idk_kateassy.Classes.Fruits
 
 		public string GetName() => name;
 		bool IFruit.IsCitrus() => isCitrus;
-		public override string ToString() => $"name: {this.name}; color: {this.color}; is citrus: {isCitrus}";
+		public override string ToString() => $"name: {this.name}; color: {this.color}; is citrus: {this.isCitrus}";
 	}
 }
