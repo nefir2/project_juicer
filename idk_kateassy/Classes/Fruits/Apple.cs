@@ -1,4 +1,4 @@
-﻿using idk_kateassy.AbstractClasses;
+﻿using idk_kateassy.Classes.AbstractClasses;
 using idk_kateassy.Interfaces;
 
 using System;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace idk_kateassy.Classes.Fruits
 {
-	internal class Apple : NonCitrus, IFruit
+    internal class Apple : NonCitrus, IFruit
 	{
 		private readonly string color;
 		private readonly string name;
@@ -28,7 +28,7 @@ namespace idk_kateassy.Classes.Fruits
 		public string GetColor() => color;
 
 		public string GetName() => name;
-		bool IFruit.IsCitrus() => isCitrus;
+		public new bool IsCitrus() => isCitrus;
 		public override string ToString() => $"name: {this.name}; color: {this.color}; is citrus: {this.isCitrus}";
 	}
 }

@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using idk_kateassy.AbstractClasses;
+using idk_kateassy.Classes.AbstractClasses;
 using idk_kateassy.Classes.Fruits;
 using idk_kateassy.Interfaces;
 
 namespace idk_kateassy.Classes
 {
-	/// <summary>
-	/// класс, реализующий интерфейс соковыжималки.
-	/// </summary>
-	public class MyJucier : IJucier
+    /// <summary>
+    /// класс, реализующий интерфейс соковыжималки.
+    /// </summary>
+    public class MyJucier : IJucier
 	{
 		public void MakeJuice(IFruit[] array)
 		{

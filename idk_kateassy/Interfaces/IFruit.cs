@@ -12,16 +12,16 @@ namespace idk_kateassy.Interfaces
         /// название фрукта.
         /// </summary>
         /// <returns>название фрукта строкового типа.</returns>
-        string GetName();
-        /// <summary>
-        /// цвет фрукта/
-        /// </summary>
-        /// <returns>цвет фрукта строкового типа.</returns>
-        string GetColor();
-        /// <summary>
-        /// является ли цитрусовым фруктом.
-        /// </summary>
-        /// <returns>если цитрусовый фрукт: <see langword="true"/>, иначе <see langword="false"/>.</returns>
-        bool IsCitrus();
+        public string GetName();
+		/// <summary>
+		/// цвет фрукта/
+		/// </summary>
+		/// <returns>цвет фрукта строкового типа.</returns>
+		public string GetColor();
+		/// <summary>
+		/// является ли цитрусовым фруктом.
+		/// </summary>
+		/// <returns>если цитрусовый фрукт: <see langword="true"/>, иначе <see langword="false"/>.</returns>
+		public bool IsCitrus();
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace idk_kateassy.AbstractClasses
+namespace idk_kateassy.Classes.AbstractClasses
 {
-    public abstract class NonCitrus
+    public abstract class Citrus
     {
-		protected bool IsCitrus() => false;
+        protected bool IsCitrus() => true;
     }
 }
