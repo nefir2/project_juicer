@@ -1,5 +1,8 @@
 ﻿namespace juicer_kateassy.Interfaces
 {
+	/// <summary>
+	/// интерфейс представляющий фрукт.
+	/// </summary>
 	public interface IFruit
 	{
 		/// <summary>
@@ -8,7 +11,7 @@
 		/// <returns>название фрукта строкового типа.</returns>
 		public string GetName();
 		/// <summary>
-		/// цвет фрукта/
+		/// цвет фрукта.
 		/// </summary>
 		/// <returns>цвет фрукта строкового типа.</returns>
 		public string GetColor();

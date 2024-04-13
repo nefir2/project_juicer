@@ -11,6 +11,7 @@ namespace juicer_kateassy.Classes
 	/// </summary>
 	public class MyJucier : IJucier
 	{
+		#region methods
 		public void MakeJuice(IFruit[] array)
 		{
 			int citrusCount = 0;
@@ -27,5 +28,6 @@ namespace juicer_kateassy.Classes
 				$"количество яблок: {appleCount}"
 			);
 		}
+		#endregion metds
 	}
 }

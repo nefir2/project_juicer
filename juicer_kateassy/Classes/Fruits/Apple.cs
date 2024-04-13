@@ -5,30 +5,68 @@ using System;
 
 namespace juicer_kateassy.Classes.Fruits
 {
+	/// <summary>
+	/// класс, представляющий не цитрусовый фрукт яблоко.
+	/// </summary>
 	public class Apple : NonCitrus, IFruit
 	{
+		#region enum
+		/// <summary>
+		/// перечисление возможных цветов яблок.
+		/// </summary>
 		public enum Colors { Red, Green }
-		private readonly string color;
+		#endregion
+		#region fields
+		/// <summary>
+		/// поле указывающее на то, является ли фрукт цитрусовым.
+		/// </summary>
 		private readonly bool isCitrus;
+		#endregion
+		#region properties
+		/// <summary>
+		/// свойство, содержащее возможные цвета яблока в строковом виде.
+		/// </summary>
 		private string[] StrColors { get; set; } = new string[] { "Red", "Green" };
+		/// <summary>
+		/// свойство, указывающее на то, выбран ли конструктором цвет яблока.
+		/// </summary>
 		private bool ColorChosed { get; set; } = false;
-		public string Color => color;
+		/// <summary>
+		/// свойство, содержащее цвет фрукта.
+		/// </summary>
+		public string Color { get; }
+		/// <summary>
+		/// свойство, содержащее имя фрукта.
+		/// </summary>
 		public string Name => nameof(Apple);
+		#endregion
+		#region constructors
 		public Apple()
 		{
-			color = ColorChoser();
+			Color = ColorChoser();
 			isCitrus = base.IsCitrus();
 		}
 		public Apple(Colors color) : this()
 		{
 			ColorChosed = true;
-			this.color = color switch { Colors.Red => StrColors[0], Colors.Green => StrColors[1], _ => throw new Exception("unreachable exception.") };
+			this.Color = color switch { Colors.Red => StrColors[0], Colors.Green => StrColors[1], _ => throw new Exception("unreachable exception.") };
 		}
-		private string ColorChoser() => !ColorChosed ? StrColors[new Random().Next(StrColors.Length)] : color;
-		public string GetColor() => color;
+		#endregion ctors
+		#region methods
+		/// <summary>
+		/// choses color to apple, if color is not chosed.
+		/// </summary>
+		/// <returns>chosed color.</returns>
+		private string ColorChoser() => !ColorChosed ? StrColors[new Random().Next(StrColors.Length)] : Color;
+		#region realizations
+		public string GetColor() => Color;
 
 		public string GetName() => Name;
 		public new bool IsCitrus() => isCitrus;
-		public override string ToString() => $"name: {this.Name}\tcolor: {this.color}\tis citrus: {this.isCitrus}";
+		#endregion realiz
+		#region overrides
+		public override string ToString() => $"name: {this.Name}\tcolor: {this.Color}\tis citrus: {this.isCitrus}";
+		#endregion overr
+		#endregion metd
 	}
 }
