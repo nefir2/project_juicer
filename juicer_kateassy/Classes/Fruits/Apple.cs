@@ -26,7 +26,7 @@ namespace juicer_kateassy.Classes.Fruits
 		/// <summary>
 		/// свойство, содержащее возможные цвета яблока в строковом виде.
 		/// </summary>
-		private string[] StrColors { get; set; } = new string[] { "Red", "Green" };
+		private string[] StrColors { get; set; } = new string[] { nameof(Colors.Red), nameof(Colors.Green) };
 		/// <summary>
 		/// свойство, указывающее на то, выбран ли конструктором цвет яблока.
 		/// </summary>
@@ -49,7 +49,7 @@ namespace juicer_kateassy.Classes.Fruits
 		public Apple(Colors color) : this()
 		{
 			ColorChosed = true;
-			this.Color = color switch { Colors.Red => StrColors[0], Colors.Green => StrColors[1], _ => throw new Exception("unreachable exception.") };
+			Color = color switch { Colors.Red => nameof(Colors.Red), Colors.Green => nameof(Colors.Green), _ => throw new Exception("unreachable exception.") };
 		}
 		#endregion ctors
 		#region methods
