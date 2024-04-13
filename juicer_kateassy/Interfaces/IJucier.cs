@@ -1,4 +1,4 @@
-﻿namespace idk_kateassy.Interfaces
+﻿namespace juicer_kateassy.Interfaces
 {
 	/// <summary>
 	/// соковыжималка
@@ -10,6 +10,6 @@
 		/// общее количество, количество цитрусовых, количество яблок.
 		/// </summary>
 		/// <param name="array">массив фруктов для соковыжималки.</param>
-		void MakeJuice(IFruit[] array);
+		public void MakeJuice(IFruit[] array);
 	}
 }

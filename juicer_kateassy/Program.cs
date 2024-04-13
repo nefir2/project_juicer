@@ -1,8 +1,8 @@
-﻿using idk_kateassy.Classes;
-using idk_kateassy.Interfaces;
-using idk_kateassy.Classes.Fruits;
+﻿using juicer_kateassy.Classes;
+using juicer_kateassy.Interfaces;
+using juicer_kateassy.Classes.Fruits;
 
-namespace idk_kateassy
+namespace juicer_kateassy
 {
 	/// <summary>
 	/// класс точки входа.

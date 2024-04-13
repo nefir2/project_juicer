@@ -1,4 +1,4 @@
-﻿namespace idk_kateassy.Classes.AbstractClasses
+﻿namespace juicer_kateassy.Classes.AbstractClasses
 {
 	public abstract class Citrus
 	{

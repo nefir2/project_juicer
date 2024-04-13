@@ -1,4 +1,4 @@
-﻿namespace idk_kateassy.Interfaces
+﻿namespace juicer_kateassy.Interfaces
 {
 	public interface IFruit
 	{

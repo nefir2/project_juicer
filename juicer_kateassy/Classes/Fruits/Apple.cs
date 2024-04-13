@@ -1,11 +1,11 @@
-﻿using idk_kateassy.Classes.AbstractClasses;
-using idk_kateassy.Interfaces;
+﻿using juicer_kateassy.Classes.AbstractClasses;
+using juicer_kateassy.Interfaces;
 
 using System;
 
-namespace idk_kateassy.Classes.Fruits
+namespace juicer_kateassy.Classes.Fruits
 {
-	internal class Apple : NonCitrus, IFruit
+	public class Apple : NonCitrus, IFruit
 	{
 		public enum Colors { Red, Green }
 		private readonly string color;

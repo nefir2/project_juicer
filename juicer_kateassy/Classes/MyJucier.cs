@@ -1,10 +1,10 @@
 ﻿using System;
 
-using idk_kateassy.Classes.AbstractClasses;
-using idk_kateassy.Classes.Fruits;
-using idk_kateassy.Interfaces;
+using juicer_kateassy.Classes.AbstractClasses;
+using juicer_kateassy.Classes.Fruits;
+using juicer_kateassy.Interfaces;
 
-namespace idk_kateassy.Classes
+namespace juicer_kateassy.Classes
 {
 	/// <summary>
 	/// класс, реализующий интерфейс соковыжималки.

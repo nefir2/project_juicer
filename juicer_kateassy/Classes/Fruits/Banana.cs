@@ -1,18 +1,18 @@
-﻿using idk_kateassy.Classes.AbstractClasses;
-using idk_kateassy.Interfaces;
+﻿using juicer_kateassy.Classes.AbstractClasses;
+using juicer_kateassy.Interfaces;
 
-namespace idk_kateassy.Classes.Fruits
+namespace juicer_kateassy.Classes.Fruits
 {
-	internal class Lemon : Citrus, IFruit
+	public class Banana : NonCitrus, IFruit
 	{
 		private readonly string color;
 		private readonly string name;
 		private readonly bool isCitrus;
 		public string Color => color;
 		public string Name => name;
-		public Lemon()
+		public Banana()
 		{
-			name = nameof(Lemon);
+			name = nameof(Banana);
 			color = "yellow";
 			isCitrus = base.IsCitrus();
 		}
