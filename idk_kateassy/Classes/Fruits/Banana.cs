@@ -1,12 +1,6 @@
 ﻿using idk_kateassy.Classes.AbstractClasses;
 using idk_kateassy.Interfaces;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace idk_kateassy.Classes.Fruits
 {
 	internal class Banana : NonCitrus, IFruit

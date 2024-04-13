@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace idk_kateassy.Interfaces
+﻿namespace idk_kateassy.Interfaces
 {
-    public interface IFruit
-    {
-        /// <summary>
-        /// название фрукта.
-        /// </summary>
-        /// <returns>название фрукта строкового типа.</returns>
-        public string GetName();
+	public interface IFruit
+	{
+		/// <summary>
+		/// название фрукта.
+		/// </summary>
+		/// <returns>название фрукта строкового типа.</returns>
+		public string GetName();
 		/// <summary>
 		/// цвет фрукта/
 		/// </summary>
@@ -23,5 +17,5 @@ namespace idk_kateassy.Interfaces
 		/// </summary>
 		/// <returns>если цитрусовый фрукт: <see langword="true"/>, иначе <see langword="false"/>.</returns>
 		public bool IsCitrus();
-    }
+	}
 }

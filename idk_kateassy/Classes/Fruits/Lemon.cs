@@ -1,15 +1,9 @@
 ﻿using idk_kateassy.Classes.AbstractClasses;
 using idk_kateassy.Interfaces;
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace idk_kateassy.Classes.Fruits
 {
-    internal class Lemon : Citrus, IFruit
+	internal class Lemon : Citrus, IFruit
 	{
 		private readonly string color;
 		private readonly string name;

@@ -1,18 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using idk_kateassy.Classes.AbstractClasses;
 using idk_kateassy.Classes.Fruits;
 using idk_kateassy.Interfaces;
 
 namespace idk_kateassy.Classes
 {
-    /// <summary>
-    /// класс, реализующий интерфейс соковыжималки.
-    /// </summary>
-    public class MyJucier : IJucier
+	/// <summary>
+	/// класс, реализующий интерфейс соковыжималки.
+	/// </summary>
+	public class MyJucier : IJucier
 	{
 		public void MakeJuice(IFruit[] array)
 		{
@@ -21,7 +18,7 @@ namespace idk_kateassy.Classes
 			for (int i = 0; i < array.Length; i++)
 			{
 				Console.WriteLine(array[i].ToString());
-                if (array[i] is Citrus) citrusCount++;
+				if (array[i] is Citrus) citrusCount++;
 				if (array[i] is Apple) appleCount++;
 			}
 			Console.WriteLine(
