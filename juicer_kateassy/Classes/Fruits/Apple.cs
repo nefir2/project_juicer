@@ -54,9 +54,9 @@ namespace juicer_kateassy.Classes.Fruits
 		#endregion ctors
 		#region methods
 		/// <summary>
-		/// choses color to apple, if color is not chosed.
+		/// выбирает цвет яблока случайным образом, если цвет не выбран.
 		/// </summary>
-		/// <returns>chosed color.</returns>
+		/// <returns>возвращает выбранный цвет.</returns>
 		private string ColorChoser() => !ColorChosed ? StrColors[new Random().Next(StrColors.Length)] : Color;
 		#region realizations
 		public string GetColor() => Color;
@@ -67,6 +67,6 @@ namespace juicer_kateassy.Classes.Fruits
 		#region overrides
 		public override string ToString() => $"name: {this.Name}\tcolor: {this.Color}\tis citrus: {this.isCitrus}";
 		#endregion overr
-		#endregion metd
+		#endregion metds
 	}
 }
