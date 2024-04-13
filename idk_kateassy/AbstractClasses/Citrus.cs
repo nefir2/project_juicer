@@ -8,6 +8,6 @@ namespace idk_kateassy.AbstractClasses
 {
     public abstract class Citrus
     {
-        protected bool isCitrus() => true;
+        protected bool IsCitrus() => true;
     }
 }

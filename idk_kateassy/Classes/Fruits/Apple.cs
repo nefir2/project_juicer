@@ -13,7 +13,7 @@ namespace idk_kateassy.Classes.Fruits
 	{
 		private string color;
 		private string name;
-		private bool iscitrus;
+		private bool isCitrus;
 		public Apple()
 		{
 			Random rnd = new Random();
@@ -21,12 +21,12 @@ namespace idk_kateassy.Classes.Fruits
 
 			name = nameof(Apple);
 			color = colors[rnd.Next(colors.Length)];
-			iscitrus = base.isCitrus();
+			isCitrus = base.IsCitrus();
 		}
-		public string getColor() => color;
+		public string GetColor() => color;
 
-		public string getName() => name;
-		bool IFruit.isCitrus() => iscitrus;
-		public override string ToString() => $"name: {this.name}; color: {this.color}; isCitrus: {iscitrus}";
+		public string GetName() => name;
+		bool IFruit.IsCitrus() => isCitrus;
+		public override string ToString() => $"name: {this.name}; color: {this.color}; is citrus: {isCitrus}";
 	}
 }

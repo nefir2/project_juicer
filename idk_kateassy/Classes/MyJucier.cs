@@ -13,7 +13,7 @@ namespace idk_kateassy.Classes
 	/// </summary>
 	public class MyJucier : IJucier
 	{
-		public void makeJuice(IFruit[] array)
+		public void MakeJuice(IFruit[] array)
 		{
 			int citrusCount = 0;
 			int appleCount = 0;
@@ -22,7 +22,7 @@ namespace idk_kateassy.Classes
 				Console.WriteLine(array[i]);
 				//if (!(i == array.Length - 1)) Console.Write(", ");
 				//else Console.WriteLine();
-                if (array[i].isCitrus()) citrusCount++;
+                if (array[i].IsCitrus()) citrusCount++;
 				if (array[i] is Apple) appleCount++;
 			}
 			Console.WriteLine(

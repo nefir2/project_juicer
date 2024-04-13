@@ -15,6 +15,6 @@ namespace idk_kateassy
 		/// метод точки входа.
 		/// </summary>
 		/// <param name="args">параметры консоли.</param>
-		private static void Main(string[] args) => new MyJucier().makeJuice(new IFruit[] { new Lemon(), new Apple(), new Banana(), new Apple(), new Orange(), new Orange(), new Banana(), new Lemon() });
+		private static void Main(string[] args) => new MyJucier().MakeJuice(new IFruit[] { new Lemon(), new Apple(), new Banana(), new Apple(), new Orange(), new Orange(), new Banana(), new Lemon() });
 	}
 }

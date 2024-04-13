@@ -18,6 +18,6 @@ namespace idk_kateassy.Interfaces
         /// общее количество, количество цитрусовых, количество яблок.
         /// </summary>
         /// <param name="array">массив фруктов для соковыжималки.</param>
-        void makeJuice(IFruit[] array);
+        void MakeJuice(IFruit[] array);
     }
 }
