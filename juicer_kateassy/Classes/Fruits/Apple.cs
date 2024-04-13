@@ -67,6 +67,6 @@ namespace juicer_kateassy.Classes.Fruits
 		#region overrides
 		public override string ToString() => $"name: {this.Name}\tcolor: {this.Color}\tis citrus: {this.isCitrus}";
 		#endregion overr
-		#endregion metd
+		#endregion metds
 	}
 }
