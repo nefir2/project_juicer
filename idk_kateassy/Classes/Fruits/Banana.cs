@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace idk_kateassy.Classes.Fruits
 {
-    internal class Banana : NonCitrus, IFruit
+	internal class Banana : NonCitrus, IFruit
 	{
 		private readonly string color;
 		private readonly string name;
@@ -26,6 +26,6 @@ namespace idk_kateassy.Classes.Fruits
 
 		public string GetName() => name;
 		public new bool IsCitrus() => isCitrus;
-		public override string ToString() => $"name: {this.name}; color: {this.color}; is citrus: {this.isCitrus}";
+		public override string ToString() => $"name: {this.name}\tcolor: {this.color}\tis citrus: {this.isCitrus}";
 	}
 }
